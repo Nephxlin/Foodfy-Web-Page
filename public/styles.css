@@ -19,7 +19,7 @@ header{
   width: 940px;
 }
 
-.Header-Div{
+.Header-Div a{
   padding-right: 30px;
   font-size: 16px;
   color: #111111;
@@ -28,6 +28,7 @@ header{
 .logo{
   padding-right: 140px;
 }
+
 /*=== Block Content */
 
 .Chef-content{
