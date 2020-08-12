@@ -1,0 +1,41 @@
+{%extends "layout.html"%}
+
+{%block content%}
+    
+    <section class="Chef-content">
+        <div>
+          <div class="Block">
+            <div class="content-block">
+              <h1>As melhores Receitas</h1>
+              <p>Aprenda a construir os melhores pratos
+                com receitas criadas por profissionais
+                do mundo inteiro.</p>
+            </div>
+            <div>
+              <img src="/assets/chef.png" alt="chef">
+            </div>
+          </div>  
+        </div>     
+    </section>
+
+    <main class="Main-Box">
+      <div>
+        <h1>As Mais Acessadas</h1>
+      </div>
+      <section>
+        
+        <div class="cards">
+          {%for item in Data%}
+          
+          <div class="card">
+            <a href="receitas/{{item.id}}"><img src="{{ item.image }}" alt="{{item.title}}"></a>
+             <h2>{{ item.title }}</h2>
+             <p>{{item.author}}</p>
+          </div>
+
+         {%endfor%}
+
+      </section>
+    </main>
+
+{%endblock%}

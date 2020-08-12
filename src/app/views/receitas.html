@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+
+{%block content%}   
+
+    <main class="Main-Box">
+      <section>
+
+        <div class="cards">
+          {%for item in Data%}
+          
+          <div class="card">
+           <a href="receitas/{{item.id}}"><img src="{{ item.image }}" alt="{{item.title}}"></a>
+             <h2>{{ item.title }}</h2>
+             <p>{{item.author}}</p>
+          </div>
+         
+         {%endfor%}
+        </div>
+      </section>
+    </main>
+
+
+{%endblock%}

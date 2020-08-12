@@ -1,22 +1,20 @@
-const modalOverlay = document.querySelector('.modal-overlay')
-const cards = document.querySelectorAll('.card')
-const modalContent = document.querySelector('.modal-content')
+const buttons = document.getElementsByTagName('button')
 
-for (let card of cards){
-  card.addEventListener("click", function(){
+
+for (const button of buttons){
+  button.addEventListener('click',function(){  
     
-    const imgCard = card.querySelector("img").src
-    console.log(imgCard)
-    const h2Card = card.querySelector("h2")
-    const pCard = card.querySelector("p")
-    modalOverlay.classList.add('active')
-    modalContent.innerHTML = `<img src="${imgCard}"><h2>${h2Card.innerText}</h2><p>${pCard.innerText}</p>`
-
-  })
+      if(button.textContent == 'Mostrar') {
+        button.innerText = 'Esconder'
+        //Dom navigation to class : InfoContent
+        changeDisplay = button.previousElementSibling.previousSibling.parentElement.nextElementSibling.style = 'display:block'
+      }else {
+        button.innerText = 'Mostrar'
+        //Dom navigation to class : InfoContent
+        changeDisplay = button.previousElementSibling.previousSibling.parentElement.nextElementSibling.style = 'display:none'
+      }
+    })
 }
 
-document.querySelector(".close-modal").addEventListener("click", function(){
-  modalOverlay.classList.remove("active")
-})
-
-
+var a
+var b = (a = 3) ? true : false
