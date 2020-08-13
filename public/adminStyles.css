@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  border:0;
+  text-decoration: none;
+}
+
+body{
+  background: white;
+  font-family: 'Roboto', sans-serif;
+  color:#111111;
+  font-size: 16px;
+  
+}
+/*== HEADER*/
+header{
+  background-color: #111111;
+  display:flex;
+  align-items: center;
+  padding: 36px;
+  max-width: 1400px;
+  margin: 0 auto;  
+}
+
+.logo{
+ margin: auto 210px;
+}
+
+/* Main Section */
+
+.Main-Box{
+  margin: 50px auto;
+  max-width: 940px;
+}
+.Main-Box h1{
+  padding-bottom: 30px;
+}
+
+.Main-Box-Header{
+  display: grid;
+  grid-template-columns: auto  max-content max-content;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.Main-Box-Header h1{
+  font-family: 'Roboto-Bold',sans-serif;
+  font-size: 24px;
+  color: #111111;
+}
+
+#purplebutton a{
+  background-color: #6558C3;
+  border-radius: 4px;
+  font-family: 'Roboto-Bold',sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 9px 20px;
+}
+#redbutton a{
+  background-color: #DC4747;
+  border-radius: 4px;
+  font-family: 'Roboto-Bold',sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 9px 20px;
+}
+
+.cards{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.cards img{
+  width: 172px;
+  height: 80px;
+  border-radius: 15px;
+  margin-bottom:10px;
+  cursor: pointer;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.card-info{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.card-info h2{
+  font-family: 'Roboto-Regular',sans-serif;
+  font-size: 18px;
+  color: #111111;
+}
+
+.card-info p{
+  font-family: 'Roboto-Regular',sans-serif;
+  font-size: 14px;
+  color: #777777;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.card-info a{
+  color: #6558C3;
+  font-family:'Roboto-Bold',sans-serif;
+}
+/* Show */
+
+.item p{
+  font-family:'Roboto-Bold',sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #111111;
+  padding:20px 0;
+}
+
+.item input{
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  height: 49px;
+  width: 940px;
+  padding-left: 20px;
+  margin: 10px auto;
+}
+
+.item textarea{
+  width: 922px;
+  max-width: 922px;
+  height: 150px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  padding: 18px;
+  font-family:'Roboto-Regular',sans-serif;
+  font-weight: 300;
+}
+
+/* Footer */
+
+footer{
+  background: #EEEEEE;
+  text-align: center;
+}
+
+footer p{
+  padding: 23px 0px;
+}

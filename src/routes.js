@@ -1,12 +1,19 @@
 const express = require('express')
 const routes = express.Router()
-const foody = require('./app/controllers/foodfy')
+const foodfy = require('./controllers/foodfy')
+const admin = require('./controllers/admin')
 
 /*Foody Routes */
 
-routes.get("/", foody.index)
-routes.get("/sobre", foody.about)
-routes.get("/receitas", foody.recipes)
-routes.get("/receitas/:index", foody.show)
+routes.get("/", foodfy.index)
+routes.get("/sobre", foodfy.about)
+routes.get("/receitas", foodfy.recipes)
+routes.get("/receitas/:index", foodfy.show)
+
+/*Foody admin Routes */
+
+routes.get("/admin",admin.index)
+routes.get("/admin/receitas/:id",admin.show)
+routes.get('/admin/receitas/edit/:id',admin.edit)
 
 module.exports = routes

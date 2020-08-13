@@ -1,4 +1,4 @@
-let Data = require('../../data')
+let Data = require('../data')
 
 module.exports = {
   index(req,res){

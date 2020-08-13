@@ -1,0 +1,21 @@
+{%extends "layoutAdmin.html"%}
+
+{%block content%}   
+
+    <main class="Main-Box">
+      <div class="Main-Box-Header">
+        <h1>Editando receita: {{recipeId.title}}</h1>
+         <button id='redbutton'><a href='./edit/{{ recipeId.id}}'>Deletar</a></button>
+        <button id='purplebutton'><a href='./edit/{{ recipeId.id}}'>Salvar Receita</a></button>
+      </div>
+      
+      
+      <form action="" method="post">
+        <section>
+
+          {% include 'Fields.html'%}
+
+        </section>
+      </form>
+    </main>
+{%endblock%}

@@ -15,7 +15,8 @@ body{
 header{
   display:flex;
   align-items: center;
-  margin: 36px auto;
+  padding: 36px;
+  margin: 0 auto;
   max-width: 940px;
 }
 
@@ -32,9 +33,10 @@ header{
 /*=== Block Content */
 
 .Chef-content{
-  margin: 0px auto;
+  padding: 0 auto;
   width: 940px;
   height: 366px;
+  margin: 0 auto;
 }
 
 .Block{

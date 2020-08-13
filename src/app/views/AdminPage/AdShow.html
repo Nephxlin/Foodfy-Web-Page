@@ -1,0 +1,59 @@
+{%extends "layoutAdmin.html"%}
+
+{%block content%}   
+
+    <main class="Main-Box">
+      <div class="Main-Box-Header">
+        <h1>Receita: {{recipeId.title}}</h1>
+        <button id='purplebutton'><a href='./edit/{{ recipeId.id}}'>Editar Receita </a></button>
+      </div>
+      
+      <section>
+        <div class="cards-show">
+     
+          <div class="card-show">
+            <img src="{{ recipeId.image }}" alt="{{ recipeId.title }}">
+             <h2>{{ recipeId.title }}</h2>
+             <p>Por {{ recipeId.author}}</p>
+          </div>
+          <div class="card-info-text">
+            
+            <div class='info-show'>
+              <h2>Ingredientes</h2>
+            </div>
+            <ul>            
+              <div class="infoContent">
+                {%for item in recipeId.ingredients %}          
+                  <li>{{item}}</li>
+                {%endfor%}
+              </div>
+            </ul>
+
+          </div>
+
+          <div class="card-info-text">
+            
+            <div class='info-show' >
+              <h2>Modo de preparo</h2>
+            </div>
+             <div class="infoContent">
+              {%for item in recipeId.preparation %}
+                <p>{{item}}</p>
+              {%endfor%}
+            </div>
+
+          </div>
+
+          <div class="card-info-text">
+            <div class='info-show' >
+              <h2>Informações Adicionais</h2>
+            </div>
+            <div class="infoContent">
+              <p>{{recipeId.information}}</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+{%endblock%}

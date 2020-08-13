@@ -12,11 +12,12 @@ server.use(routes)
 
 server.set("view engine","html")
 
-nunjucks.configure('src/app/views',{
+nunjucks.configure(['./src/app/views/MainPage', './src/app/views/AdminPage'],{
   express: server,
   autoescape: false,
   noCache: true
 })
+
 
 
 server.listen(5000, function(){

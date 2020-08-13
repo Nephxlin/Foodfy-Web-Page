@@ -1,0 +1,47 @@
+<div class="item">
+  <p>Imagem da receita</p>
+    <div>
+      <input 
+      type="url" 
+      name="image"
+      value="{{ recipeId.image }}"
+      />
+  </div>
+</div>
+
+<div class="item">
+  <p>Ingredientes</p>
+    {%for item in recipeId.ingredients%}
+    <div>
+      <input 
+      type="text" 
+      name="ingredients"
+      value="{{ item}}"
+      />
+  </div>
+  {%endfor%}
+</div>
+
+
+<div class="item">
+  <p>Modo de Preparo</p>
+    {%for item in recipeId.preparation%}
+    <div>
+      <input 
+      type="text" 
+      name="preparation"
+      value="{{ item }}"
+      />
+  </div>
+  {%endfor%}
+</div>
+
+<div class="item last">
+  <p>Informações Adicionais</p>
+    <div>
+      <textarea 
+      id="item"
+      name="information"  
+      >{{ recipeId.information }}</textarea>
+    </div>
+</div>
