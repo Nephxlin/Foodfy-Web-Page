@@ -32,9 +32,7 @@ header{
   margin: 50px auto;
   max-width: 940px;
 }
-.Main-Box h1{
-  padding-bottom: 30px;
-}
+
 
 .Main-Box-Header{
   display: grid;
@@ -73,6 +71,7 @@ header{
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
+  margin-top: 30px;
 }
 
 
@@ -112,8 +111,86 @@ header{
   color: #6558C3;
   font-family:'Roboto-Bold',sans-serif;
 }
-/* Show */
 
+/* Show Recipes */
+.cards-show{
+  margin: 0 auto;
+}
+
+.cards-show img{
+  width: 940;
+  height: 280;
+  border-radius: 15px;
+  margin-bottom:20px;
+  cursor: pointer;
+}
+
+.card-show{
+  padding-bottom: 50px;
+}
+
+
+.card-show h2{
+  padding-top: 50px;
+  padding-bottom: 4px;
+  font-family: 'Roboto-Bold',sans-serif;
+  font-size: 36px;
+  color: #111111;
+  text-align: center;
+}
+
+.card-show p{
+  padding-top: 4px;
+  font-family: 'Roboto-Regular',sans-serif;
+  font-size: 20px;
+  color: #777777;
+  text-align: center;
+}
+
+.card-info-text{
+  padding:20px;
+}
+
+.info-show button{
+  background: none;
+  font-family: 'Roboto-Bold',sans-serif;
+  font-size: 12px;
+  color: #999999;
+  cursor: pointer;
+  padding: 0px;
+  padding-left: 8px;
+}
+
+.info-show h2{
+  padding: 0;
+}
+
+.info-show{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+
+.card-info-text p{
+  font-family: 'Roboto-Regular',sans-serif;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.card-info-text ul{
+ padding-left: 20px;
+}
+
+.card-info-text li{
+  font-family: 'Roboto-Regular',sans-serif;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+/* Edit */
 .item p{
   font-family:'Roboto-Bold',sans-serif;
   font-weight: 700;
@@ -122,13 +199,22 @@ header{
   padding:20px 0;
 }
 
+.item span{
+  font-family:'Roboto-Bold',sans-serif;
+  font-weight: 700;
+  color: #6558C3;
+  cursor: pointer;
+  display: flex;
+  padding-top: 15px;
+}
+
 .item input{
   border: 1px solid #DDDDDD;
   border-radius: 4px;
   height: 49px;
   width: 940px;
   padding-left: 20px;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
 .item textarea{

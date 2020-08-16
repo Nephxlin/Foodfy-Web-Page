@@ -1,47 +1,53 @@
-<div class="item">
-  <p>Imagem da receita</p>
-    <div>
-      <input 
-      type="url" 
-      name="image"
-      value="{{ recipeId.image }}"
-      />
-  </div>
-</div>
+      <div class="item">
+        <p>Imagem da receita</p>
+          <div>
+            <input 
+            type="url" 
+            name="image"
+            value="{{ recipeId.image }}"
+            />
+        </div>
+      </div>
 
-<div class="item">
-  <p>Ingredientes</p>
-    {%for item in recipeId.ingredients%}
-    <div>
-      <input 
-      type="text" 
-      name="ingredients"
-      value="{{ item}}"
-      />
-  </div>
-  {%endfor%}
-</div>
+      <div class="item ">
+        <p>Ingredientes</p>
+        <div class ="ingredients">
+          {%for item in recipeId.ingredients%}   
+            <input 
+            id ="ingredient"
+            type="text" 
+            name="ingredients[]"
+            value="{{ item}}"
+            />
+        {%endfor%}
+          
+        </div> 
+        <span id='add-ingredient'> + Adicionar novo ingrediente</span>
+      </div>
 
 
-<div class="item">
-  <p>Modo de Preparo</p>
-    {%for item in recipeId.preparation%}
-    <div>
-      <input 
-      type="text" 
-      name="preparation"
-      value="{{ item }}"
-      />
-  </div>
-  {%endfor%}
-</div>
+      <div class="item">
+        <p>Modo de Preparo</p>
+        <div class ='steps'>
+          {%for item in recipeId.preparation%}
+            <input 
+            id="step"
+            type="text" 
+            name="preparation[]"
+            value="{{ item }}"
+            />
+        {%endfor%}
+        </div>
+        <span id="add-step">+ Adicionar novo passo</span>
+      </div>
 
-<div class="item last">
-  <p>Informações Adicionais</p>
-    <div>
-      <textarea 
-      id="item"
-      name="information"  
-      >{{ recipeId.information }}</textarea>
-    </div>
-</div>
+      <div class="item last">
+        <p>Informações Adicionais</p>
+          <div>
+            <textarea 
+            id="item"
+            name="information"  
+            >{{ recipeId.information }}</textarea>
+          </div>
+      </div>
+
