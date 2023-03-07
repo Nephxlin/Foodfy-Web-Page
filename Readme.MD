@@ -12,4 +12,4 @@ Based on The MVC architecture monolithc
 
 # Admin
 
-for access the admin mode just put in the url path "/Admin"
+for access the admin mode just put in the url path "/admin"
